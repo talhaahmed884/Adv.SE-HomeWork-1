@@ -121,7 +121,7 @@ public class Freelancer implements Payable {
 
     /**
      * performs payment calculation operation through product of hours worked and hourly rate.
-     * adds 1.5x overtime if hours worked are greater than 40 hours.
+     * adds 1.5x overtime to the hours over 40 hours when the total hours worked are greater than 40 hours.
      *
      * @return calculated payment in double format.
      */
