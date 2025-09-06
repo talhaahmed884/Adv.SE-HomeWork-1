@@ -1,9 +1,11 @@
-package inheritance;
+package com.cpp.homeWork1.inheritance;
 
 /**
  * An Employee class to represent the First name, Last name, and Social Security number of an employee.
  */
 public class Employee {
+    //    to format the output on the terminal
+    public static final String outputFormatter = "| %-15s| %-15s| %-15s| %-15s| %-10s| %-15s| %-10s| %-15s| %-12s|";
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
@@ -47,7 +49,7 @@ public class Employee {
     }
 
     /**
-     * getter method to set the lastName value of an Employee.
+     * getter method to return the lastName value of an Employee.
      *
      * @return lastName of an Employee.
      */
@@ -65,7 +67,7 @@ public class Employee {
     }
 
     /**
-     * getter method to set the socialSecurityNumber value of an Employee.
+     * getter method to return the socialSecurityNumber value of an Employee.
      *
      * @return socialSecurityNumber of an Employee.
      */
@@ -84,6 +86,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return this.firstName + "\t" + this.lastName + "\t" + this.socialSecurityNumber;
+        return String.format(outputFormatter, this.firstName, this.lastName, this.socialSecurityNumber, "", "", "", "", "", "");
     }
 }

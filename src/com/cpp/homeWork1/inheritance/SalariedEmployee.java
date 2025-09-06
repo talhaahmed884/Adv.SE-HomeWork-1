@@ -1,4 +1,4 @@
-package inheritance;
+package com.cpp.homeWork1.inheritance;
 
 /**
  * A SalariedEmployee class that extends the Employee and stores weekly salary of an employee.
@@ -44,7 +44,7 @@ public class SalariedEmployee extends Employee {
 
     @Override
     public String toString() {
-        return this.getFirstName() + "\t" + this.getLastName() + "\t" + this.getSocialSecurityNumber() + "\t" + this.weeklySalary;
+        return String.format(outputFormatter, this.getFirstName(), this.getLastName(), this.getSocialSecurityNumber(), this.weeklySalary, "", "", "", "", "");
     }
 
 }

@@ -1,4 +1,4 @@
-package inheritance;
+package com.cpp.homeWork1.inheritance;
 
 /**
  * A CommissionEmployee class that extends the Employee and stores information for commission rate of an Employee and
@@ -66,6 +66,6 @@ public class CommissionEmployee extends Employee {
 
     @Override
     public String toString() {
-        return this.getFirstName() + "\t" + this.getLastName() + "\t" + this.getSocialSecurityNumber() + "\t" + this.commissionRate + "\t" + this.grossSales;
+        return String.format(outputFormatter, this.getFirstName(), this.getLastName(), this.getSocialSecurityNumber(), "", "", "", this.commissionRate, this.grossSales, "");
     }
 }

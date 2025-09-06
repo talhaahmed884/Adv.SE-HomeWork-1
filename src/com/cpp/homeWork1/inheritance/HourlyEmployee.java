@@ -1,4 +1,4 @@
-package inheritance;
+package com.cpp.homeWork1.inheritance;
 
 /**
  * A HourlyEmployee class that extends the Employee and stores information for hourly wage of an Employee and number of
@@ -66,6 +66,6 @@ public class HourlyEmployee extends Employee {
 
     @Override
     public String toString() {
-        return this.getFirstName() + "\t" + this.getLastName() + "\t" + this.getSocialSecurityNumber() + "\t" + this.wage + "\t" + this.hoursWorked;
+        return String.format(outputFormatter, this.getFirstName(), this.getLastName(), this.getSocialSecurityNumber(), "", this.wage, this.hoursWorked, "", "", "");
     }
 }

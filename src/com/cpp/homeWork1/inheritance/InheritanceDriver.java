@@ -1,8 +1,10 @@
-package inheritance;
+package com.cpp.homeWork1.inheritance;
 
 public class InheritanceDriver {
-    //    TODO: Implement a table like output to display the results
     public static void main(String[] args) {
+//        displaying headers of the data
+        System.out.printf(Employee.outputFormatter + "\n", "First name", "Last name", "Social Sec #", "Weekly Salary", "Wage", "Hours worked", "Com rate", "Gross sales", "Base salary");
+
         SalariedEmployee salariedEmployeeOne = new SalariedEmployee("Joe", "Jones", "111-11-1111", 2500);
         System.out.println(salariedEmployeeOne);
 

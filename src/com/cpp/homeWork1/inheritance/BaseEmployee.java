@@ -1,4 +1,4 @@
-package inheritance;
+package com.cpp.homeWork1.inheritance;
 
 /**
  * A BaseEmployee class that extends the Employee and stores information for base salary of an employee.
@@ -44,6 +44,6 @@ public class BaseEmployee extends Employee {
 
     @Override
     public String toString() {
-        return this.getFirstName() + "\t" + this.getLastName() + "\t" + this.getSocialSecurityNumber() + "\t" + this.baseSalary;
+        return String.format(outputFormatter, this.getFirstName(), this.getLastName(), this.getSocialSecurityNumber(), "", "", "", "", "", this.baseSalary);
     }
 }
